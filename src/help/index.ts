@@ -15,8 +15,8 @@ export function getTodoDataLocalStorage():TodoList[]|[]{
 }
 
 export function getFullDate(date:Date){
-      const fullDate=date.toLocaleDateString()
-      const fulltime=date.toLocaleTimeString()
+      const fullDate=date?.toLocaleDateString()
+      const fulltime=date?.toLocaleTimeString()
      
 
      return  `${fullDate} - ${fulltime}`

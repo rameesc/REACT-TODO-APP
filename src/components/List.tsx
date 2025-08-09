@@ -17,7 +17,7 @@ const {manyInsert}=useStorage()
     }
   return (
     <div className="bg-white relative p-2 rounded-[5px]">
-        <p className="text-[12px]  text-gray-500">{getFullDate(date as Date)}</p>
+        <p className="text-[12px]  text-gray-500">{getFullDate(date)}</p>
         <p  className="font-[500]  max-w-[200px] break-words">{title}</p>
         <button 
          onClick={removeTodoSingleList}
