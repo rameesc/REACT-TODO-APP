@@ -41,7 +41,8 @@ export const Home = () => {
          
         insert({
             title:title,
-            id:Date.now()
+            id:Date.now(),
+            date:new Date()
         })
 
         setTitle('')

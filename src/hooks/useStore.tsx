@@ -13,7 +13,7 @@ export const useStorage=create<Storage>((set)=>({
     todoList:[],
     
     insert:(data)=>set((state)=>({
-        todoList:[...state.todoList,{title:data.title,id:data.id}],
+        todoList:[...state.todoList,{title:data.title,id:data.id,date:data?.date}],
         
     })),
     manyInsert:(data)=>set(()=>({

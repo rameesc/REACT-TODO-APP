@@ -13,3 +13,11 @@ export function getTodoDataLocalStorage():TodoList[]|[]{
          return data
 
 }
+
+export function getFullDate(date:Date){
+      const fullDate=date.toLocaleDateString()
+      const fulltime=date.toLocaleTimeString()
+     
+
+     return  `${fullDate} - ${fulltime}`
+}

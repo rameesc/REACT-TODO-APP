@@ -17,6 +17,7 @@ export const TodoTlist = () => {
               key={item.id}
               id={item.id}
               title={item.title}
+              date={item.date}
             />
 
         ))}
